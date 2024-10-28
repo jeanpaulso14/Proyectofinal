@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lista de Productos</h1>
+      <nav>
+        <button onclick="cancelarCompra()">Cancelar Compra</button>
+        <button onclick="completarCompra()">Completar Compra</button>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="filtros">
+        <h2>Filtros</h2>
+        <select id="filtro1">
+          <option value="">Filtrar por categoría</option>
+          <!-- Opciones adicionales -->
+        </select>
+        <input type="text" id="filtro2" placeholder="Buscar por nombre" />
+        <button onclick="aplicarFiltros()">Filtrar</button>
+        <button onclick="limpiarFiltros()">Limpiar Filtros</button>
+      </aside>
+
+      <section class="productos">
+        <div id="productos-list"></div>
+        <p id="fin-lista" class="mensaje-fin">No hay más productos.</p>
+      </section>
+
+      <aside class="detalle-producto">
+        <h2>Detalles del Producto</h2>
+        <div id="detalle-contenido"></div>
+        <input type="number" id="cantidad" min="1" placeholder="Cantidad" />
+        <button onclick="agregarAlCarrito()">Agregar al Carrito</button>
+      </aside>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="productos.js"></script>
+  </body>
+</html>

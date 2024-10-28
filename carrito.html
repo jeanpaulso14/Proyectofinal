@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Carrito de Compras</h1>
+      <nav>
+        <button onclick="cancelarCompra()">Cancelar Compra</button>
+        <button onclick="continuarComprando()">Continuar Comprando</button>
+      </nav>
+    </header>
+
+    <section class="carrito-container">
+      <div class="compra-actual">
+        <h2>Compra Actual</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio Unitario</th>
+              <th>Total</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="carrito-list">
+            <!-- Aquí se cargarán los productos del carrito -->
+          </tbody>
+        </table>
+        <p id="total-compra">Total de la compra: $0</p>
+      </div>
+
+      <aside class="resumen-compra">
+        <h2>Resumen de Compra</h2>
+        <p id="total-productos">Total de productos: 0</p>
+        <p id="costo-domicilio">Costo de domicilio: $15,000</p>
+        <p id="total-final">Total final: $0</p>
+        <button onclick="irAFormularioPago()">Confirmar Compra</button>
+      </aside>
+
+      <aside class="formulario-tarjeta">
+        <h2>Información de Tarjeta de Crédito</h2>
+        <form id="formulario-pago">
+          <input
+            type="text"
+            placeholder="Número de Tarjeta"
+            maxlength="16"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Fecha de Expiración (MM/AA)"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Código de Seguridad"
+            maxlength="3"
+            required
+          />
+          <input type="text" placeholder="Nombre del Titular" required />
+          <select required>
+            <option value="">País de Emisión</option>
+            <!-- Agregar opciones de países -->
+          </select>
+          <select required>
+            <option value="mastercard">Mastercard</option>
+            <option value="visa">Visa</option>
+            <option value="prepagada">Prepagada</option>
+          </select>
+          <button type="submit">Confirmar Pago</button>
+        </form>
+      </aside>
+    </section>
+
+    <script src="carrito.js"></script>
+  </body>
+</html>

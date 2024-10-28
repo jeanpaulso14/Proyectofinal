@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #a83232;
+}
+
+h1 {
+  color: #a83232;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.radio-group {
+  margin: 1rem 0;
+}
+
+.radio-group p {
+  margin-bottom: 0.5rem;
+  color: #a83232;
+}
+
+.radio-group label {
+  margin-right: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #a83232;
+  color: #fff;
+}
+
+button[type="reset"] {
+  background-color: #d9d9d9;
+  color: #333;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+/* Estructura general */
+header {
+  background-color: #a83232;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav button {
+  background-color: white;
+  color: #a83232;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.filtros,
+.detalle-producto {
+  width: 20%;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.productos {
+  width: 60%;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.producto-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.producto-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.mensaje-fin {
+  text-align: center;
+  color: #a83232;
+}
+.carrito-container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.compra-actual,
+.resumen-compra,
+.formulario-tarjeta {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.compra-actual table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compra-actual th,
+.compra-actual td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+#total-compra {
+  font-weight: bold;
+  color: #a83232;
+}
+
+.resumen-compra h2,
+.formulario-tarjeta h2 {
+  color: #a83232;
+}
+
+.formulario-tarjeta form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

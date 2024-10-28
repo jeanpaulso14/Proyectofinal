@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requerimientos de Compra</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Requerimientos de Compra</h1>
+      <form id="requerimientos-form">
+        <label for="nombre">Nombre del comprador:</label>
+        <input type="text" id="nombre" maxlength="20" required />
+
+        <label for="presupuesto">Presupuesto máximo:</label>
+        <input
+          type="number"
+          id="presupuesto"
+          min="0"
+          required
+          placeholder="$0"
+        />
+
+        <label for="cantidad">Cantidad máxima de artículos:</label>
+        <input type="number" id="cantidad" min="1" max="20" required />
+
+        <label for="direccion">Dirección de entrega:</label>
+        <input type="text" id="direccion" required />
+
+        <div class="radio-group">
+          <p>Tipo de entrega:</p>
+          <label
+            ><input type="radio" name="entrega" value="domicilio" required />
+            Domicilio</label
+          >
+          <label
+            ><input type="radio" name="entrega" value="recoger" required />
+            Recoger en tienda</label
+          >
+        </div>
+
+        <div class="button-group">
+          <button type="submit">Iniciar Compra</button>
+          <button type="reset">Limpiar Campos</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

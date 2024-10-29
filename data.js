@@ -15,269 +15,268 @@ const productos = [
   },
   {
     id: 3,
-    nombre: "Juego B",
+    nombre: "Cyberpunk 2077",
     precio: 30000,
     categoria: "Aventura",
     img: "1.png"
   },
   {
     id: 4,
-    nombre: "Juego B",
+    nombre: "Horizon",
     precio: 30000,
     categoria: "Aventura",
     img: "2.png"
   },
   {
     id: 5,
-    nombre: "Juego B",
+    nombre: "The witcher 3",
     precio: 30000,
     categoria: "Aventura",
     img: "3.png"
   },
   {
     id: 6,
-    nombre: "Juego B",
+    nombre: "Mafia",
     precio: 30000,
     categoria: "Aventura",
     img: "4.png"
   },
   {
     id: 7,
-    nombre: "Juego B",
+    nombre: "Need for speed unbound",
     precio: 30000,
     categoria: "Aventura",
     img: "5.png"
   },
   {
     id: 8,
-    nombre: "Juego B",
+    nombre: "The last of us part 2",
     precio: 30000,
     categoria: "Aventura",
     img: "6.png"
   },
   {
     id: 9,
-    nombre: "Juego B",
+    nombre: "Assasins creed mirage",
     precio: 30000,
     categoria: "Aventura",
     img: "7.png"
   },
   {
     id: 10,
-    nombre: "Juego B",
+    nombre: "Spiderman 2",
     precio: 30000,
     categoria: "Aventura",
     img: "8.png"
   },
   {
     id: 11,
-    nombre: "Juego B",
+    nombre: "Lies of p",
     precio: 30000,
     categoria: "Aventura",
     img: "9.png"
   },
   {
     id: 12,
-    nombre: "Juego B",
+    nombre: "Baldurs gate 3",
     precio: 30000,
     categoria: "Aventura",
     img: "10.png"
   },
   {
     id: 13,
-    nombre: "Juego B",
+    nombre: "Star wars outlaws",
     precio: 30000,
     categoria: "Aventura",
     img: "11.png"
   },
   {
     id: 14,
-    nombre: "Juego B",
+    nombre: "Fallout 4",
     precio: 30000,
     categoria: "Aventura",
     img: "12.png"
   },
   {
     id: 15,
-    nombre: "Juego B",
+    nombre: "Red dead redemption 2",
     precio: 30000,
     categoria: "Aventura",
     img: "13.png"
   },
   {
     id: 16,
-    nombre: "Juego B",
+    nombre: "Call of duty black ops 6",
     precio: 30000,
     categoria: "Aventura",
     img: "14.png"
   },
   {
     id: 17,
-    nombre: "Juego B",
+    nombre: "Dead island 2",
     precio: 30000,
     categoria: "Aventura",
     img: "15.png"
   },
   {
     id: 18,
-    nombre: "Juego B",
+    nombre: "Fc 25",
     precio: 30000,
     categoria: "Aventura",
     img: "16.png"
   },
   {
     id: 19,
-    nombre: "Juego B",
+    nombre: "Black myth wukong",
     precio: 30000,
     categoria: "Aventura",
     img: "18.png"
   },
   {
     id: 20,
-    nombre: "Juego B",
+    nombre: "Silent hill 2",
     precio: 30000,
     categoria: "Aventura",
     img: "20.png"
   },
   {
     id: 21,
-    nombre: "Juego B",
+    nombre: "Final fantasy XVI",
     precio: 30000,
     categoria: "Aventura",
     img: "21.png"
   },
   {
     id: 22,
-    nombre: "Juego B",
+    nombre: "Hogwarts legacy",
     precio: 30000,
     categoria: "Aventura",
     img: "22.png"
   },
   {
     id: 23,
-    nombre: "Juego B",
+    nombre: "The Legend Of Zelda Spirit Tracks",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "23.png"
   },
   {
     id: 24,
-    nombre: "Juego B",
+    nombre: "Super Smash Bros Brawl",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "24.png"
   },
   {
     id: 25,
-    nombre: "Juego B",
+    nombre: "Bloodborne",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "25.png"
   },
   {
     id: 26,
-    nombre: "Juego B",
+    nombre: "Sekiro",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "26.png"
   },
   {
     id: 27,
-    nombre: "Juego B",
+    nombre: "Dark souls 3",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "27.png"
   },
   {
     id: 28,
-    nombre: "Juego B",
+    nombre: "Skyrim",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "28.png"
   },
   {
     id: 29,
-    nombre: "Juego B",
+    nombre: "Metal Gear Solid V",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "29.png"
   },
   {
     id: 30,
-    nombre: "Juego B",
+    nombre: "The Legend Of Zelda Breath Of The Wild",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "30.png"
   },
   {
     id: 31,
-    nombre: "Juego B",
+    nombre: "Elden Ring",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "31.png"
   },
   {
     id: 32,
-    nombre: "Juego B",
+    nombre: "GTA V",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "32.png"
   },
   {
     id: 33,
-    nombre: "Juego B",
+    nombre: "Monster Hunter World",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "33.png"
   },
   {
     id: 34,
-    nombre: "Juego B",
+    nombre: "Nier Automata",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "34.png"
   },
   {
     id: 35,
-    nombre: "Juego B",
+    nombre: "Dragon ball Fighter Z",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "35.png"
   },
   {
     id: 36,
-    nombre: "Juego B",
+    nombre: "No More Heroes 3",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "36.png"
   },
   {
     id: 37,
-    nombre: "Juego B",
+    nombre: "Mortal Kombat 11",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "37.png"
   },
   {
     id: 38,
-    nombre: "Juego B",
+    nombre: "Ghost Recon Wildlands",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "38.png"
   },
   {
     id: 39,
-    nombre: "Juego B",
+    nombre: "Street Fighter 6",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "39.png"
   },
   {
     id: 40,
-    nombre: "Juego B",
+    nombre: "Persona 5",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "40.png"
   }
-  // ...
 ];

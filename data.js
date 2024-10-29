@@ -4,154 +4,154 @@ const productos = [
     nombre: "Warhammer 40k Space Marine 2",
     precio: 189900,
     categoria: "Acción",
-    img: "W40k.jpg"
+    img: "17.png"
   },
   {
     id: 2,
     nombre: "Dragon ball Sparking Zero",
     precio: 30000,
     categoria: "Aventura",
-    img: "SZ.jpg"
+    img: "19.png"
   },
   {
     id: 3,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "1.png"
   },
   {
     id: 4,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "2.png"
   },
   {
     id: 5,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "3.png"
   },
   {
     id: 6,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "4.png"
   },
   {
     id: 7,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "5.png"
   },
   {
     id: 8,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "6.png"
   },
   {
     id: 9,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "7.png"
   },
   {
     id: 10,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "8.png"
   },
   {
     id: 11,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "9.png"
   },
   {
     id: 12,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "10.png"
   },
   {
     id: 13,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "11.png"
   },
   {
     id: 14,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "12.png"
   },
   {
     id: 15,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "13.png"
   },
   {
     id: 16,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "14.png"
   },
   {
     id: 17,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "15.png"
   },
   {
     id: 18,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "16.png"
   },
   {
     id: 19,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "18.png"
   },
   {
     id: 20,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "20.png"
   },
   {
     id: 21,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "21.png"
   },
   {
     id: 22,
     nombre: "Juego B",
     precio: 30000,
     categoria: "Aventura",
-    img: "img2.jpg"
+    img: "22.png"
   },
   {
     id: 23,

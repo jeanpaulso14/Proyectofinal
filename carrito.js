@@ -4,20 +4,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function cargarCarrito() {
   const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  console.log("Cargando carrito:", carrito);
 
-  const carritoContainer = document.getElementById("carrito-container");
+  const carritoContainer = document.getElementById("carrito-list");
+  const totalElement = document.getElementById("total-compra");
+
+  if (!carritoContainer || !totalElement) {
+    console.error("Elementos necesarios no encontrados en el DOM.");
+    return;
+  }
+
   carritoContainer.innerHTML = "";
 
   carrito.forEach((producto) => {
-    const item = document.createElement("div");
+    const item = document.createElement("tr");
     item.classList.add("producto-carrito");
 
     item.innerHTML = `
-      <p>Nombre: ${producto.nombre}</p>
-      <p>Precio: $${producto.precio}</p>
-      <p>Cantidad: ${producto.cantidad}</p>
-      <p>Total: $${producto.precio * producto.cantidad}</p>
-      <button onclick="eliminarProducto(${producto.id})">Eliminar</button>
+      <td>${producto.nombre}</td>
+      <td>${producto.cantidad}</td>
+      <td>$${producto.precio}</td>
+      <td>$${producto.precio * producto.cantidad}</td>
+      <td><button onclick="eliminarProducto(${
+        producto.id
+      })">Eliminar</button></td>
     `;
 
     carritoContainer.appendChild(item);
@@ -27,8 +37,7 @@ function cargarCarrito() {
     (sum, item) => sum + item.precio * item.cantidad,
     0
   );
-  const totalElement = document.getElementById("total-compra");
-  totalElement.innerText = `Total: $${total}`;
+  totalElement.innerText = `Total de la compra: $${total}`;
 }
 
 function eliminarProducto(id) {
@@ -40,7 +49,9 @@ function eliminarProducto(id) {
 
 function irAFormularioPago() {
   const formulario = document.querySelector(".formulario-tarjeta");
-  formulario.style.display = "block";
+  if (formulario) {
+    formulario.style.display = "block";
+  } else {
+    console.error("Formulario de tarjeta no encontrado.");
+  }
 }
-
-document.addEventListener("DOMContentLoaded", cargarCarrito);

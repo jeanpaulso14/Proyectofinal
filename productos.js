@@ -40,15 +40,27 @@ function verDetalle(id) {
   const producto = productos.find((p) => p.id === id);
   const detalle = document.getElementById("detalle-contenido");
   detalle.innerHTML = `
-    <h3>${producto.nombre}</h3>
+    <h3 data-id="${producto.id}">${producto.nombre}</h3>
     <img src="${producto.img}" alt="${producto.nombre}">
     <p>Precio: $${producto.precio}</p>
     <p>Categoría: ${producto.categoria}</p>
   `;
 }
 
-function agregarAlCarrito() {
+function agregarAlCarrito(id) {
+  const producto = productos.find((p) => p.id === id);
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+  const productoEnCarrito = carrito.find((item) => item.id === producto.id);
+  if (productoEnCarrito) {
+    productoEnCarrito.cantidad++;
+  } else {
+    carrito.push({ ...producto, cantidad: 1 });
+  }
+
+  localStorage.setItem("carrito", JSON.stringify(carrito));
   alert("Producto agregado al carrito");
+  console.log("Carrito actualizado:", carrito);
 }
 
 function completarCompra() {

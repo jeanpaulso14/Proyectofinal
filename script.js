@@ -3,15 +3,33 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const nombre = document.getElementById("nombre").value;
-    const presupuesto = document.getElementById("presupuesto").value;
-    const cantidad = document.getElementById("cantidad").value;
-    const direccion = document.getElementById("direccion").value;
+    const nombre = document.getElementById("nombre").value.trim();
+    const presupuesto = parseFloat(
+      document.getElementById("presupuesto").value
+    );
+    const cantidad = parseInt(document.getElementById("cantidad").value, 10);
+    const direccion = document.getElementById("direccion").value.trim();
     const entrega = document.querySelector('input[name="entrega"]:checked');
 
-    if (nombre && presupuesto && cantidad && direccion && entrega) {
-      window.location.href = "productos.html";
-    } else {
-      alert("Por favor, completa todos los campos antes de continuar.");
+    if (
+      !nombre ||
+      isNaN(presupuesto) ||
+      presupuesto <= 0 ||
+      isNaN(cantidad) ||
+      cantidad <= 0 ||
+      cantidad > 20 ||
+      !direccion ||
+      !entrega
+    ) {
+      alert("Por favor, completa todos los campos correctamente.");
+      return;
     }
+
+    sessionStorage.setItem("nombre", nombre);
+    sessionStorage.setItem("presupuesto", presupuesto);
+    sessionStorage.setItem("cantidad", cantidad);
+    sessionStorage.setItem("direccion", direccion);
+    sessionStorage.setItem("entrega", entrega.value);
+
+    window.location.href = "productos.html";
   });

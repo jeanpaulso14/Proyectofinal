@@ -18,12 +18,14 @@
     <div class="container">
       <aside class="filtros">
         <h2>Filtros</h2>
-        <select id="filtro1">
-          <option value="">Filtrar por categoría</option>
-          <!-- Opciones adicionales -->
+        <select id="filtro1" onchange="aplicarFiltro()">
+          <option value="">Todas las Categorías</option>
+          <option value="Aventura">Aventura</option>
+          <option value="Acción">Acción</option>
+          <option value="Rol">Rol</option>
         </select>
         <input type="text" id="filtro2" placeholder="Buscar por nombre" />
-        <button onclick="aplicarFiltros()">Filtrar</button>
+        <button onclick="aplicarFiltro()">Filtrar</button>
         <button onclick="limpiarFiltros()">Limpiar Filtros</button>
       </aside>
 

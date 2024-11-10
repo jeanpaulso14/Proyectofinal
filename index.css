@@ -6,6 +6,26 @@ body {
   padding: 0;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  background-color: #a83232;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+header img.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
 .container {
   max-width: 600px;
   margin: 2rem auto;
@@ -78,17 +98,6 @@ button:hover {
   opacity: 0.9;
 }
 
-header {
-  background-color: #a83232;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
 nav {
   display: flex;
   justify-content: center;
@@ -104,6 +113,7 @@ nav button {
   cursor: pointer;
 }
 
+.carrito-container,
 .container {
   display: flex;
   gap: 1rem;
@@ -142,11 +152,6 @@ nav button {
   text-align: center;
   color: #a83232;
 }
-.carrito-container {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem;
-}
 
 .compra-actual,
 .resumen-compra,
@@ -182,4 +187,9 @@ nav button {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.header-title {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
 }
